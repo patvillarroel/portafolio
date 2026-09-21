@@ -50,9 +50,9 @@ La pieza que define la arquitectura es que el balanceador no tiene dirección p�
 
 ### 3. drawio-aws-reference
 
-**Herramienta propia, nacida de un problema del propio trabajo.** Cada diagrama de arquitectura que necesitaba entregar en draw.io fallaba por lo mismo: nombres de estencil escritos de memoria que no existen en la librería AWS, y que se descubren recién al abrir el archivo.
+**Herramienta propia, nacida de un problema del propio trabajo.** Diseño cada arquitectura conversando en Mermaid, que es ideal para pensar pero pobre para entregar: cajas genéricas, sin simbología AWS ni un estilo reconocible. Generar directamente en draw.io tampoco resolvía, porque el resultado eran cajas redondeadas sin íconos.
 
-Construí un paquete de referencia con los nombres verificados del set de formas AWS 2026, más un validador en Python que revisa el archivo antes de entregarlo. Es la diferencia entre revisar a ojo y tener una prueba que corre.
+Construí una skill que convierte un diseño esbozado en Mermaid en un diagrama draw.io con la simbología oficial AWS 2026, respetando espaciado y especificaciones de draw.io, más un validador en Python que revisa el archivo antes de entregarlo.
 
 `Python` `XML` `draw.io` `simbología AWS 2026`
 
